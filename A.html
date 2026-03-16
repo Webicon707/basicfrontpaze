@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Library Header</title>
+<link rel="stylesheet" href="Astyle.css">
+</head>
+
+<body>
+
+<!-- Top Header -->
+<div class="top-header">
+
+  <div class="left-section">
+    <button>Log In</button>
+  </div>
+
+  <div class="right-section">
+    <span>Hours & Location</span>
+    <span>Help ❓</span>
+  </div>
+
+</div>
+
+<!-- Main Header -->
+<div class="main-header">
+
+  <div class="logo">📚 BookTrack</div>
+
+  <div class="search-section">
+
+    <span>Search the</span>
+
+    <select id="catalog">
+      <option>All Catalog</option>
+      <option>Books</option>
+      <option>E-Books</option>
+      <option>Journals</option>
+      <option>Magazines</option>
+    </select>
+
+    <span>by</span>
+
+    <select id="keyword">
+      <option>Keyword</option>
+      <option>Title</option>
+      <option>Author</option>
+      <option>Genre</option>
+      <option>ISBN</option>
+    </select>
+
+    <input type="text" placeholder="Search here">
+
+    <button>🔍</button>
+
+  </div>
+
+</div>
+
+<!-- Navigation -->
+<div class="nav-bar">
+
+  <div class="menu">
+    Books & More
+    <div class="dropdown">
+      <div>Books</div>
+      <div>Popular Books</div>
+      <div>New Arrivals</div>
+      <div>Books by Genre</div>
+    </div>
+  </div>
+
+  <div class="menu">
+    Services
+    <div class="dropdown">
+      <div>Borrow Book</div>
+      <div>Return Book</div>
+      <div>Membership</div>
+      <div>Study Rooms</div>
+    </div>
+  </div>
+
+  <div class="menu">
+    Events
+    <div class="dropdown">
+      <div>Events</div>
+      <div>Book Reading</div>
+      <div>Author Talks</div>
+      <div>Workshops</div>
+    </div>
+  </div>
+
+</div>
+<!--books container-->
+<section class="books-container" id="booksContainer"></section>
+<script src="script.js"></script>
+</body>
+</html>
