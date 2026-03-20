@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+}
+
+/* Top Header */
+
+.top-header {
+  background-color: #f0f0f0;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-section button {
+  background-color: rgba(62, 255, 9, 0.924);
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+/* Hover effect */
+.left-section button:hover{
+  background-color: green;
+}
+
+.right-section span {
+  margin-left: 20px;
+  color: #174cde;
+  cursor: pointer;
+}
+
+/* Main Header */
+
+.main-header {
+  background-color: #d4a62a;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(12,123,12);
+}
+
+/* Search Section */
+
+.search-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-section input {
+  padding: 8px;
+  width: 200px;
+}
+
+.search-section select {
+  padding: 6px;
+}
+
+.search-section button {
+  padding: 8px 12px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Navigation bar */
+.nav-bar {
+  background-color: #5c8a1a;
+  padding: 15px 40px;
+  color: white;
+  display: flex;
+  gap: 40px;
+}
+
+/* Menu item */
+.menu {
+  position: relative;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Dropdown box */
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: white;
+  color: black;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Dropdown items */
+.dropdown div {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Hover effect */
+.dropdown div:hover {
+  background-color: #f2f2f2;
+}
+
+/* Show dropdown on hover */
+.menu:hover .dropdown {
+  display: block;
+}
+
+/* Books Grid */
+
+.books-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px,1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.book-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.book-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
